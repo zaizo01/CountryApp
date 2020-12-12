@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1 class="text-center">Countries API</h1>
     <card-list />
   </div>

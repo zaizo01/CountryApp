@@ -1,9 +1,11 @@
 <template>
-  <div class="container row">
-      <continents />
-      <searcher />
+  <div class="row">
+         <div class="d-flex flex-row align-items-center">
+             <div class="p-2 col-sm"><searcher /></div>
+             <div class="p-2"><continents /></div>
+         </div>
       <div 
-      class="col-12"
+      class="col d-flex"
       v-for="country in countries" :key="country.name">
       <card :country="country"/>
       </div>

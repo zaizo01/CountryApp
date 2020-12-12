@@ -1,8 +1,8 @@
 <template>
-<div class="">
+<div class="row">
   <input type="text" 
          placeholder="Country..." 
-         class="form=control my-3 p-2 w-50" 
+         class="form-control my-3 p-2 w-50" 
          v-model="text"
          @keyup="processInput">
 </div>

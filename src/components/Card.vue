@@ -1,13 +1,13 @@
 <template>
-  <div class="card w-10" style="width: 300px;">
+  <div class="card" style="width: 300px;">
       <div class="card-body">
           <div class="card-title text-center">{{ country.name}}</div>
           <p class="text-center"><img :src="country.flag" :alt="`Bandera de ${country.name}`" class="img-fluid"></p>
-          <div class="card-text">
-              <span class="badge bg-dark d-block mb-1">{{ country.nativeName}}</span>
-              <span class="badge bg-dark d-block mb-1">{{ formatNumber(country.population) }}</span>
-              <span class="badge bg-dark d-block mb-1">{{ country.capital}}</span>
-              <span class="badge bg-dark d-block mb-1">{{ country.region}}</span>
+          <div class="card-text row">
+              <span class="">Name: {{ country.nativeName}}</span>
+              <span class="">Population: {{ formatNumber(country.population) }}</span>
+              <span class="">Capital: {{ country.capital}}</span>
+              <span class="">Region: {{ country.region}}</span>
           </div>
       </div>
   </div>

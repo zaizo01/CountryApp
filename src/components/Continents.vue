@@ -1,6 +1,5 @@
 <template>
-  <div class="text-center">
-      <h3>Filtered for continents</h3>
+  <div>
         <div class="btn-group">
             <button class="btn btn-dark" @click="filter('Americas')">AM</button>
             <button class="btn btn-dark" @click="filter('Europe')">EU</button>
