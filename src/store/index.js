@@ -22,11 +22,27 @@ export default createStore({
       } catch (error) {
         console.log(error);
       }
+    },
+    filterRegion({commit, state}, region){
+      const filter = state.countries.filter((country) => {
+        return country.region.includes(region)
+      })
+      commit('setFilteredCountries', filter)
+    },
+    filterdCountries({commit, state}, text){
+      const textClient = text.toLowerCase();
+      const filter = state.countries.filter(country => {
+        const textApi = country.name.toLowerCase();
+        if (textApi.includes(textClient)) {
+          return country 
+        }
+      })
+      commit('setFilteredCountries', filter)
     }
   },
   getters: {
     topCountries(state){
-      return state.countries.sort((a, b) => {
+      return state.filteredCountries.sort((a, b) => {
         return a.population < b.population ? 1 : -1
       })
     }

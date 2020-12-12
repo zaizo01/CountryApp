@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card w-10" style="width: 300px;">
       <div class="card-body">
           <div class="card-title text-center">{{ country.name}}</div>
           <p class="text-center"><img :src="country.flag" :alt="`Bandera de ${country.name}`" class="img-fluid"></p>

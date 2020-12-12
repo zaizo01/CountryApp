@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Countries API</h1>
+    <h1 class="text-center">Countries API</h1>
     <card-list />
   </div>
   <router-view/>
